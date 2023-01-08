@@ -14,7 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,700,700i|Raleway:300,300i,400,400i,500,500i,500,500i,700,700i|Poppins:300,300i,400,400i,500,500i,500,500i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -67,46 +67,111 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/AWS 아키텍쳐.PNG" alt="">
+                  <font size="5px"><br><strong>아키텍쳐</strong></br></font>
+                  <br><img src="assets/img/portfolio/AWS 아키텍쳐.PNG" alt=""></br>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/1.PNG" alt="">
+                  <font size="5px"><br><strong>1. Ec2 웹서버 설정 (EC2에 node.js설치 후 웹서버)</strong></br></font>
+                  <br><img src="assets/img/portfolio/1-1.PNG" alt=""></br>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/2.PNG" alt="">
+                  <font size="5px"><br><strong>1-1. Ec2 웹서버 설정 (EC2에 마운트 된 S3로 연결하여 웹서버)</strong></br></font>
+                  <br><img src="assets/img/portfolio/1.PNG" alt=""></br>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/3.PNG" alt="">
+                  <font size="5px"><br><strong>2. ALB를 연결하여 Load Balancing 기능 확인</strong></br></font>
+                  <br><img src="assets/img/portfolio/2.PNG" alt=""></br>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/4.PNG" alt="">
+                  <font size="5px"><br><strong>3. Auto Scaling 생성하고 Load Balancer에 연결</strong></br></font>
+                  <br><img src="assets/img/portfolio/3.PNG" alt=""></br>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/5.PNG" alt="">
+                  <font size="5px"><br><strong>4. WAF에 생성된 Load Balancer 연결 (클라우드 프론트 및 지역 리소스 설정 → 서울 설정 → Free rule groups 선택하고 설정 → 설정 확인 및 우선순위 결정)</strong></br></font>
+                  <br><img src="assets/img/portfolio/4.PNG" alt=""></br>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/6.PNG" alt="">
+                  <font size="5px"><br><strong>4-1. SQL INJECTION 확인</strong></br></font>
+                  <br><img src="assets/img/portfolio/4-1.PNG" alt=""></br>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/7.PNG" alt="">
+                  <font size="5px"><br><strong>4-2. XSS 확인</strong></br></font>
+                  <br><img src="assets/img/portfolio/4-2.PNG" alt=""></br>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/8.PNG" alt="">
+                  <font size="5px"><br><strong>5. Route 53 (호스팅 영역 생성 → 생성할 도메인 이름 입력 → 퍼블릭 호스팅 영역 → route53 레코드 값 가비아 네임서버에 입력 → 가비아 DNS 관리 → DNS 설정 → 타입 CNAME → 호스트 @, www 입력 및 ALB 값 입력</strong></br></font>
+                  <br><img src="assets/img/portfolio/5.PNG" alt=""></br>
                 </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>5-1. Route 53 적용(레코드 이름 작성 (x) → 레코드 유형 A → ALB 별칭 → 서울 선택 → 생성한 ALB 선택 → 라우팅 영역 → 단순 라우팅 선택 → 적용 확인</strong></br></font>
+                  <br><img src="assets/img/portfolio/5-1.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>6. Document DB를 이용한 DR (Disaster Recovery) 구성 : 엔진은 4.0이상 글로벌 클러스터 적용 → 글로벌 클러스터를 인스턴스 용량이 작은 t3, t4g, r4 제외하고 만든다. → 마스터 사용자 이름 및 암호 입력 → primary, secondary 동일한 마스터 사용자 이름 및 암호를 이용</strong></br></font>
+                  <br><img src="assets/img/portfolio/6.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>6-1. Document DB Cluster 만들기</strong></br></font>
+                  <br><img src="assets/img/portfolio/6-1.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>6-2. Global Document DB Cluster 만들기 (작업 → 리전 추가 → 도쿄 리전 추가)</strong></br></font>
+                  <br><img src="assets/img/portfolio/6-2.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>6-3. EC2 인스턴스에 연결 → chmod 400 키입력 → SSH 클라이언트 연결 → EC2 PRIMARY, SECONDARY 생성 확인</strong></br></font>
+                  <br><img src="assets/img/portfolio/6-3.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>6-4. Seoul EC2 웹서버 (웹서버에 데이터 입력 → EC2 mongo DB에 저장 → DB관리자 선별 → PRIMARY 입력 및 전송 → SECONDARY 입력확인)</strong></br></font>
+                  <br> <img src="assets/img/portfolio/6-4.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>7. Beanstalk 환경 구축 Beanstalk 생성시 EC2, Auto scaling, Load Balencing 기능이 제공되어 손쉽게 배포 가능</strong></br></font>
+                  <br><img src="assets/img/portfolio/7.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>7-1. Beanstalk에서 설정한 EC2</strong></br></font>
+                  <br><img src="assets/img/portfolio/7-1.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>7-2. Beanstalk에서 NAT연결로 인한 외부로 ping test</strong></br></font>
+                  <br><img src="assets/img/portfolio/7-2.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>8. VPC PEERING 연결 (피어링 설정 → 피어링 VPC 선택 → 피어링 할 다른 VPC 선택 → (내 계정 또는 다른 계정) → 도쿄 요청수락 → VPCPEERING 생성)</strong></br></font>
+                  <br><img src="assets/img/portfolio/8.PNG" alt=""></br>
+                </div>
+
+                <div class="swiper-slide">
+                  <font size="5px"><br><strong>8-1. 요청자 VPC 와 수락자 VPC 확인 및 PING TEST 도쿄에 NAT설정으로 서울 → 도쿄 불가능(x) 도쿄 → 서울 가능(o)</strong></br></font>
+                  <br><img src="assets/img/portfolio/8-1.PNG" alt=""></br>
+                </div>
+
 
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
-
+          
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
@@ -115,27 +180,6 @@
                 <li><strong>프로젝트기간 기간</strong><br>2022.12.11 ~ 2022.12.20</br></li>
                 <li><strong>프로젝트 목표</strong><br>DR(Disaster Recovery)에 개념을 공부하고 실제 구축을 통해 DR의 실시간 전송 및 복구 기능을 사용하고 DR 기능 중 하나인 Document DB에 서울 리전과 과 도쿄 리전을 연결하여 Global document cluster를 사용하였다. 웹사이트 배포와 동시에 방화벽 WAF를 사용하여 SQL injection과 XSS 방어를 목표로 하였다.</br></li>
                 <li><strong>AWS 사용 기능</strong><br>EC2, S3, ALB, Auto scaling, WAF, Router 53, Document DB, BeansTalk</br></li>
-                <li><strong>프로젝트 내용</strong>
-                  <br>1. Ec2 웹서버 설정(EC2에 node.js설치 후 웹서버)</br>
-                  <br>1-1. Ec2 웹서버 설정(EC2에 마운트 된 S3로 연결하여 웹서버)</br>
-                  <br>2. ALB를 연결하여 Load Balancing 기능확인</br>
-                  <br>3. AutoScaling 생성하고 Load Balancer에 연결 </br>
-                  <br>4. waf 에 생성된 load balancer 연결(클라우드 프론트 및 지역 리소스 설정한다. → 서울을 설정한다 → Free rule groups 선택하고 설정 → 설정확인 및 우선순위 결정</br>
-                  <br>4-1. SQL INJECTION 확인</br>
-                  <br>4-2. XSS 확인 </br>
-                  <br>5. Route53 (호스팅 영역 생성 → 생성할 도메인 이름 입력 → 퍼블릭 호스팅 영역 → route53 레코드 값 가비아 네임서버에 입력 → 가비아 DNS 관리 → DNS 설정 → 타입 CNAME → 호스트 @, www 입력 및 ALB 값 입력 </br>
-                  <br>5-1. Route53 적용(레코드 이름 작성(x) → 레코드 유형 A → ALB 별칭 → 서울 선택 → 생성한 ALB 선택 → 라우팅 영역 → 단순 라우팅 선택 → 적용확인</br>
-                  <br>6. Document DB를 이용한 DR(Disaster Recovery) 구성 : 엔진은 4.0이상 글로벌 클러스터 적용 → 글로벌 클러스터를 인스턴스 용량이 작은 t3, t4g, r4 제외하고 만든다. → 마스터 사용자 이름 및 암호 입력 → primary, secondary 동일한 마스터 사용자 이름 및 암호를 이용한다. </br>
-                  <br>6-1. DocumentDB Cluster 만들기 </br>
-                  <br>6-2. Global DocumentDB Cluster 만들기 (작업 → 리전 추가 → 도쿄리전 추가) </br>
-                  <br>6-3. EC2 인스턴스에 연결 → chmod 400 키입력 → ssh 클라이언트 연결 → EC2 PRIMARY, SECONDARY 생성 확인 </br>
-                  <br>6-4. Seoul EC2 웹서버 ( 웹서버에 데이터 입력 → EC2 mongo DB에 저장 → DB관리자 선별 → PRIMARY 입력 및 전송 → SECONDARY 입력확인</br>
-                  <br>7. Beanstalk 환경 구축 Beanstalk 생성시 ec2, autoscaling, loadbalencing 기능이 제공되어 손쉽게 배포가능</br>
-                  <br>7-1. beanstalk에서 설정한 ec2</br>
-                  <br>7-2. beanstalk에서 nat연결로 인한 외부로 ping test</br>
-                  <br>8. VPCPEERING 연결(피어링 설정 → 피어링 VPC 선택 → 피어링 할 다른 VPC 선택 → (내 계정 또는 다른 계정) → 도쿄 요청수락 → VPCPEERING 생성</br>
-                  <br>8-1. 요청자 VPC 와 수락자 VPC 확인 및 PING TEST 도쿄에 NAT설정으로 서울 → 도쿄 불가능(x) 도쿄 → 서울 가능(o)</br>
-                </li>
               
               </ul>
             </div>
